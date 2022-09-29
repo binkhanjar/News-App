@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Questions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Question 1 -->
+            <TextView
+                android:id="@+id/tv_q1"
+                style="@style/TextQuestion"
+                android:text="@string/q1" />
+
+            <RadioGroup
+                android:id="@+id/rg_q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <RadioButton
+                    android:id="@+id/rb_q1_answer1"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ1"
+                    android:text="@string/real_madrid" />
+
+                <RadioButton
+                    android:id="@+id/rb_q1_answer2"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ1"
+                    android:text="@string/barcelona" />
+
+                <RadioButton
+                    android:id="@+id/rb_q1_answer3"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ1"
+                    android:text="@string/bayern_munich" />
+
+                <RadioButton
+                    android:id="@+id/rb_q1_answer4"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ1"
+                    android:text="@string/juventus" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#0000ff" />
+
+            <!-- Question 2 -->
+            <TextView
+                android:id="@+id/tv_q2"
+                style="@style/TextQuestion"
+                android:text="@string/q2" />
+
+            <CheckBox
+                android:id="@+id/cb1_messi"
+                style="@style/RadioButton"
+                android:text="@string/lionel_messi" />
+
+            <CheckBox
+                android:id="@+id/cb2_ronaldo"
+                style="@style/RadioButton"
+                android:text="@string/cristiano_ronaldo" />
+
+            <CheckBox
+                android:id="@+id/cb3_ibrahimovic"
+                style="@style/RadioButton"
+                android:text="@string/zlatan_ibrahimovic" />
+
+            <CheckBox
+                android:id="@+id/cb4_iniesta"
+                style="@style/RadioButton"
+                android:text="@string/andres_iniesta" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#0000ff" />
+
+            <!-- Question 3 -->
+            <TextView
+                android:id="@+id/tv_q3"
+                style="@style/TextQuestion"
+                android:text="@string/q3" />
+
+            <EditText
+                android:id="@+id/et_answer3"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:autofillHints="no"
+                android:background="@drawable/edit_text_box"
+                android:gravity="center"
+                android:hint="@string/typeYourAnswer"
+                android:inputType="textCapCharacters" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#0000ff" />
+
+            <!-- Question 4 -->
+            <TextView
+                android:id="@+id/tv_q4"
+                style="@style/TextQuestion"
+                android:text="@string/q4" />
+
+            <RadioGroup
+                android:id="@+id/rg_q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_q4_answer_true"
+                    style="@style/RadioButton"
+                    android:onClick="trueOrFalse"
+                    android:text="@string/answer_true" />
+
+                <RadioButton
+                    android:id="@+id/rb_q4_answer_false"
+                    style="@style/RadioButton"
+                    android:onClick="trueOrFalse"
+                    android:text="@string/answer_false" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#0000ff" />
+
+            <!-- Question 5 -->
+            <TextView
+                android:id="@+id/tv_q5"
+                style="@style/TextQuestion"
+                android:text="@string/q5" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/world_cup"
+                android:contentDescription="@string/todo" />
+
+            <RadioGroup
+                android:id="@+id/rg_q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_q5_answer1"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ5"
+                    android:text="@string/world_cup" />
+
+                <RadioButton
+                    android:id="@+id/rb_q5_answer2"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ5"
+                    android:text="@string/european_cup" />
+
+                <RadioButton
+                    android:id="@+id/rb_q5_answer3"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ5"
+                    android:text="@string/africa_cup" />
+
+                <RadioButton
+                    android:id="@+id/rb_q5_answer4"
+                    style="@style/RadioButton"
+                    android:onClick="radioButtonQ5"
+                    android:text="@string/asian_cup" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#0000ff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="AnswerButton"
+                android:text="@string/answer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

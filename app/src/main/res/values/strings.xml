@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="q1">1- Who is the Champions League champion for the year 2020?</string>
+    <string name="q2">2- Who won the title of the best player in the world from these players?</string>
+    <string name="q3">3- What is the team that won the most World Cup?</string>
+    <string name="q4">4- Barcelona nicknamed the Century Team, true or false?</string>
+    <string name="q5">5- What is the name of this cup?</string>
+    <string name="typeYourAnswer"> type Your Answer</string>
+    <string name="correct_answers">correct answers</string>
+    <string name="real_madrid">Real Madrid</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="bayern_munich">Bayern Munich</string>
+    <string name="juventus">Juventus</string>
+    <string name="lionel_messi">Lionel Messi</string>
+    <string name="cristiano_ronaldo">Cristiano Ronaldo</string>
+    <string name="zlatan_ibrahimovic">Zlatan Ibrahimovic</string>
+    <string name="andres_iniesta">Andres Iniesta</string>
+    <string name="answer_true">True</string>
+    <string name="answer_false">False</string>
+    <string name="world_cup">World Cup</string>
+    <string name="european_cup">European Cup</string>
+    <string name="africa_cup">Africa Cup</string>
+    <string name="asian_cup">Asian Cup</string>
+    <string name="answer">Answer</string>
+    <string name="score">Score</string>
+    <string name="todo">TODO</string>
+    <string name="successful">\"successful \"</string>
+    <string name="Try_again">\"Try again \"</string>
+</resources>
